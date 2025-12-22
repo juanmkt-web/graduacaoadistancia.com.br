@@ -16,7 +16,7 @@ const testimonials = [
   {
     id: 2,
     quote:
-      "Eu achava que Marketing era só fazer arte bonitinha no Canva, mas meu chefe cobrava venda e eu travava. O curso me ensinou a estratégia por trás do post e como analisar dados. Hoje sei atrair cliente de verdade e provo meu valor mostrando relatório de faturamento.",
+      "Eu achava que Marketing era só fazer arte bonitinha no Canva, mas meu chefe cobrava venda e eu travava. O Curso me ensinou a estratégia por trás do post e como analisar dados. Hoje sei atrair cliente de verdade e provo meu valor mostrando relatório de faturamento.",
     name: "Bruna Cabezuca",
     course: "Gestão de Marketing",
     photo: brunaFoto,
