@@ -37,7 +37,7 @@ const Hero = () => {
                 textShadow: "2px 2px 8px rgba(0, 0, 0, 0.2)",
               }}
             >
-              QUEM NÃO DOMINA<span className="text-primary"> A TECNOLOGIA</span> SERÁ DOMINADO POR ELA.
+              QUEM NÃO DOMINA A<span className="text-primary"> TECNOLOGIA</span> SERÁ DOMINADO POR ELA.
             </h1>
 
             <p className="text-base md:text-xl text-white/90 leading-relaxed mb-5 md:mb-8">
