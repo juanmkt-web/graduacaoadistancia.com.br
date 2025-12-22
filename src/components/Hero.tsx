@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Award, Users } from "lucide-react";
-import heroBackground from "@/assets/hero-background.jpg";
+import heroBackground from "@/assets/hero-background-graduation.jpg";
 
 // Cache buster to avoid CDN/browser serving an older asset after confirm/revert
 const HERO_BG_VERSION = Date.now();
