@@ -8,23 +8,23 @@ const testimonials = [
   {
     id: 1,
     quote:
-      "Eu achava que Marketing era só fazer post bonitinho no Instagram, mas não vendia nada. O curso abriu minha cabeça pra estratégia e tráfego pago. Parei de 'chutar' o que ia dar certo. Hoje gerencio as campanhas da empresa e mostro resultados reais em vendas pro meu chefe.",
+      "Eu cansava de rodar a cidade mostrando imóvel pra no final outro corretor assinar o contrato e levar a comissão. Aquilo me doía no bolso. Fiz o curso pra tirar meu CRECI e entender a papelada. Hoje faço a venda de ponta a ponta e a comissão gorda fica toda comigo.",
     name: "Breno Takana",
-    course: "Gestão de Marketing",
+    course: "Negócios Imobiliários",
     photo: brenoFoto,
   },
   {
     id: 2,
     quote:
-      "Trabalhar na recepção da imobiliária e ver os corretores ganhando comissões altas me dava uma agonia. Eu queria aquilo pra mim, mas precisava do CRECI. A graduação me deu a base jurídica que eu não tinha. Hoje não atendo telefone, hoje fecho contrato e ganho minha própria comissão.",
+      "Eu achava que Marketing era só fazer arte bonitinha no Canva, mas meu chefe cobrava venda e eu travava. O curso me ensinou a estratégia por trás do post e como analisar dados. Hoje sei atrair cliente de verdade e provo meu valor mostrando relatório de faturamento.",
     name: "Bruna Cabezuca",
-    course: "Negócios Imobiliários",
+    course: "Gestão de Marketing",
     photo: brunaFoto,
   },
   {
     id: 3,
     quote:
-      "Eu tinha muita prática do dia a dia, mas faltava a teoria pra crescer. Na hora da reunião com a diretoria, eu ficava calado. A Graduação em Administração me deu vocabulário e visão de negócio. Deixei de ser apenas 'o cara que executa' pra ser 'o gestor que planeja', e meu salário dobrou.",
+      "Eu trabalhava muito no operacional, 'apagando incêndio' o dia todo, mas na hora da promoção a vaga ia pra quem tinha diploma. Cansei de perder oportunidade. A Administração me deu a visão de gestor que faltava. Hoje lidero minha equipe e meu salário finalmente é compatível com meu esforço.",
     name: "Mauricio Magalhães",
     course: "Administração",
     photo: mauricioFoto,
