@@ -21,7 +21,7 @@ All colors MUST be HSL.
     --primary: 204 78% 55%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 330 85% 60%;
+    --secondary: 12 90% 58%;
     --secondary-foreground: 0 0% 100%;
     
     /* Cyan light for benefits section */
@@ -34,8 +34,8 @@ All colors MUST be HSL.
     --muted: 220 20% 96%;
     --muted-foreground: 220 15% 45%;
 
-    /* CTA - Blue #329FE5 */
-    --accent: 204 78% 55%;
+    /* CTA - Coral #F45A34 */
+    --accent: 12 90% 58%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
