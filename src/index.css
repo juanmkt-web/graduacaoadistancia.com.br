@@ -28,8 +28,8 @@ All colors MUST be HSL.
     --cyan-light: 204 70% 50%;
     --cyan-light-foreground: 0 0% 100%;
 
-    /* Dark blue for backgrounds - #1E2842 */
-    --dark-blue: 220 38% 19%;
+    /* Dark blue for backgrounds - slightly lighter */
+    --dark-blue: 220 38% 28%;
 
     --muted: 220 20% 96%;
     --muted-foreground: 220 15% 45%;
