@@ -8,11 +8,9 @@ const HERO_BG_VERSION = Date.now();
 const Hero = () => {
   return (
     <section
-      className="relative flex items-center overflow-hidden pt-[72px] pb-8 md:pt-[112px] md:pb-16"
+      className="relative flex items-center overflow-hidden pt-[72px] pb-8 md:pt-[112px] md:pb-16 bg-cover bg-[position:center_top] xl:bg-[position:center_20%]"
       style={{
         backgroundImage: `url(${heroBackground}?v=${HERO_BG_VERSION})`,
-        backgroundSize: "cover",
-        backgroundPosition: "top right",
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-dark-blue/95 via-dark-blue/80 to-transparent"></div>
