@@ -47,11 +47,11 @@ All colors MUST be HSL.
 
     --radius: 0.75rem;
     
-    /* Gradient colors - Purple to Blue tones */
-    --gradient-start: 280 55% 35%;
-    --gradient-mid: 250 65% 45%;
-    --gradient-mid-2: 220 70% 50%;
-    --gradient-end: 200 80% 55%;
+    /* Gradient colors - Purple to Coral */
+    --gradient-start: 270 70% 18%;
+    --gradient-mid: 305 75% 35%;
+    --gradient-mid-2: 340 80% 45%;
+    --gradient-end: 12 85% 55%;
     
     /* Legacy gradient colors - updated */
     --gradient-cyan: 204 78% 55%;
@@ -135,7 +135,8 @@ All colors MUST be HSL.
   .gradient-animated {
     background: linear-gradient(135deg, 
       hsl(var(--gradient-start)) 0%, 
-      hsl(var(--gradient-mid)) 50%, 
+      hsl(var(--gradient-mid)) 25%, 
+      hsl(var(--gradient-mid-2)) 70%, 
       hsl(var(--gradient-end)) 100%
     );
   }
