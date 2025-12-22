@@ -1,7 +1,7 @@
 import { Quote } from "lucide-react";
-import flaviaFoto from "@/assets/flavia-oliveira.png";
-import marcoFoto from "@/assets/marco-antunes.png";
-import marlonFoto from "@/assets/marlon-bertuline.png";
+import brenoFoto from "@/assets/breno-takana.png";
+import brunaFoto from "@/assets/bruna-cabezuca.png";
+import mauricioFoto from "@/assets/mauricio-magalhaes.png";
 import { useState, useEffect } from "react";
 
 const testimonials = [
@@ -9,25 +9,25 @@ const testimonials = [
     id: 1,
     quote:
       "Eu achava que Marketing era só fazer post bonitinho no Instagram, mas não vendia nada. O curso abriu minha cabeça pra estratégia e tráfego pago. Parei de 'chutar' o que ia dar certo. Hoje gerencio as campanhas da empresa e mostro resultados reais em vendas pro meu chefe.",
-    name: "Marlon Bertuline",
+    name: "Breno Takana",
     course: "Gestão de Marketing",
-    photo: marlonFoto,
+    photo: brenoFoto,
   },
   {
     id: 2,
     quote:
       "Trabalhar na recepção da imobiliária e ver os corretores ganhando comissões altas me dava uma agonia. Eu queria aquilo pra mim, mas precisava do CRECI. A graduação me deu a base jurídica que eu não tinha. Hoje não atendo telefone, hoje fecho contrato e ganho minha própria comissão.",
-    name: "Flavia Oliveira",
+    name: "Bruna Cabezuca",
     course: "Negócios Imobiliários",
-    photo: flaviaFoto,
+    photo: brunaFoto,
   },
   {
     id: 3,
     quote:
       "Eu tinha muita prática do dia a dia, mas faltava a teoria pra crescer. Na hora da reunião com a diretoria, eu ficava calado. A Graduação em Administração me deu vocabulário e visão de negócio. Deixei de ser apenas 'o cara que executa' pra ser 'o gestor que planeja', e meu salário dobrou.",
-    name: "Marco Antunes",
+    name: "Mauricio Magalhães",
     course: "Administração",
-    photo: marcoFoto,
+    photo: mauricioFoto,
   },
 ];
 
