@@ -44,16 +44,15 @@ const FacultySection = () => {
       }}
     >
       {/* Top Wave */}
-      <div className="absolute left-0 right-0 top-0 -translate-y-[1px]">
+      <div className="absolute left-0 right-0 top-0 -translate-y-[1px]" aria-hidden="true">
         <svg
-          viewBox="0 0 1440 120"
-          fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="block w-full"
+          viewBox="0 0 1200 120"
           preserveAspectRatio="none"
+          className="block w-full h-[60px] md:h-[120px]"
         >
           <path
-            d="M0 120L60 105C120 90 240 60 360 45C480 30 600 30 720 37.5C840 45 960 60 1080 67.5C1200 75 1320 75 1380 75L1440 75V0H1380C1320 0 1200 0 1080 0C960 0 840 0 720 0C600 0 480 0 360 0C240 0 120 0 60 0H0V120Z"
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
             fill="white"
           />
         </svg>
@@ -110,16 +109,15 @@ const FacultySection = () => {
       </div>
 
       {/* Bottom Wave */}
-      <div className="absolute bottom-0 left-0 right-0 translate-y-[1px]">
+      <div className="absolute bottom-0 left-0 right-0 translate-y-[1px]" aria-hidden="true">
         <svg
-          viewBox="0 0 1440 120"
-          fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="block w-full"
+          viewBox="0 0 1200 120"
           preserveAspectRatio="none"
+          className="block w-full h-[60px] md:h-[120px]"
         >
           <path
-            d="M0 0L60 15C120 30 240 60 360 75C480 90 600 90 720 82.5C840 75 960 60 1080 52.5C1200 45 1320 45 1380 45L1440 45V120H1380C1320 120 1200 120 1080 120C960 120 840 120 720 120C600 120 480 120 360 120C240 120 120 120 60 120H0V0Z"
+            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
             fill="white"
           />
         </svg>
