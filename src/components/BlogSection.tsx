@@ -66,93 +66,73 @@ const blogPosts: BlogPost[] = [
 
 const BlogSection = () => {
   return (
-    <section
-      className="relative py-16 md:py-24"
-      style={{
-        background: "linear-gradient(180deg, #050d21 0%, #020711 100%)",
-      }}
-    >
-      {/* Top Wave */}
-      <div className="absolute left-0 right-0 top-0 -translate-y-[1px]" aria-hidden="true">
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-          className="block w-full h-[60px] md:h-[120px]"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            fill="white"
-          />
-        </svg>
-      </div>
-
-      <div className="container mx-auto px-4 pt-12 md:pt-20">
+    <section className="relative pt-3 pb-16 md:pt-5 md:pb-32 bg-[#1E2842]">
+      <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-12 md:mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-black text-white mb-4 tracking-tight">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl md:text-5xl font-bold text-white mb-2 md:mb-4">
             BLOG DE INFORMAÇÕES
           </h2>
-          <p className="text-white/80 text-base md:text-lg max-w-3xl mx-auto leading-relaxed">
+          <p className="text-gray-300 text-sm md:text-lg max-w-3xl mx-auto">
             Dicas de carreira, tendências de mercado e tudo o que você precisa saber para
             tomar as melhores decisões para o seu futuro profissional.
           </p>
         </div>
 
         {/* Blog Grid */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-2 gap-3 md:gap-6 lg:grid-cols-4">
           {blogPosts.map((post, index) => (
             <a
               key={index}
               href={post.url}
               target="_blank"
               rel="noopener noreferrer"
-              className="group block"
+              className="relative rounded-lg overflow-hidden cursor-pointer block transition-transform duration-300 hover:scale-105"
             >
-              <div className="relative rounded-2xl overflow-hidden h-[400px] md:h-[450px]">
-                {/* Background Image */}
+              {/* Image Container */}
+              <div className="aspect-[3/4] md:aspect-[4/5] relative">
                 <img
                   src={post.image}
                   alt={post.title}
-                  className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-full object-cover"
                 />
+              </div>
 
-                {/* Overlay Gradient */}
-                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/80" />
+              {/* Overlay Gradient */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
 
-                {/* Content */}
-                <div className="absolute inset-0 flex flex-col justify-between p-5">
-                  {/* Top - Author Info */}
-                  <div>
-                    <p className="text-white font-semibold text-sm">
-                      {post.author}
-                    </p>
-                    <p className="text-white/70 text-xs">
-                      {post.date} · {post.readTime}
-                    </p>
-                  </div>
+              {/* Content */}
+              <div className="absolute inset-0 flex flex-col justify-between p-4">
+                {/* Top - Author Info */}
+                <div>
+                  <p className="text-white font-semibold text-sm">
+                    {post.author}
+                  </p>
+                  <p className="text-xs text-white/90">
+                    {post.date}
+                  </p>
+                </div>
 
-                  {/* Bottom - Title and Stats */}
-                  <div>
-                    <h3 className="text-white font-bold text-base md:text-lg leading-tight mb-4 line-clamp-3">
-                      {post.title}
-                    </h3>
-                    <div className="flex items-center justify-between text-white/80 text-xs">
-                      <div className="flex items-center gap-3">
-                        <span className="flex items-center gap-1">
-                          <Eye className="w-4 h-4" />
-                          {post.views.toLocaleString()}
-                        </span>
-                        <span className="flex items-center gap-1">
-                          <MessageSquare className="w-4 h-4" />
-                          {post.comments}
-                        </span>
-                      </div>
-                      <span className="flex items-center gap-1 text-red-400">
-                        <Heart className="w-4 h-4 fill-current" />
-                        {post.likes}
+                {/* Bottom - Title and Stats */}
+                <div>
+                  <h3 className="text-white font-semibold text-sm leading-tight mb-4 line-clamp-3">
+                    {post.title}
+                  </h3>
+                  <div className="flex items-center justify-between">
+                    <div className="flex items-center gap-4 text-white text-xs">
+                      <span className="flex items-center gap-1">
+                        <Eye className="w-4 h-4" />
+                        {post.views.toLocaleString()}
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <MessageSquare className="w-4 h-4" />
+                        {post.comments}
                       </span>
                     </div>
+                    <span className="flex items-center gap-1 text-red-400 text-xs">
+                      <Heart className="w-4 h-4 fill-current" />
+                      {post.likes}
+                    </span>
                   </div>
                 </div>
               </div>
@@ -162,12 +142,12 @@ const BlogSection = () => {
       </div>
 
       {/* Bottom Wave */}
-      <div className="absolute bottom-0 left-0 right-0 translate-y-[1px]" aria-hidden="true">
+      <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20" aria-hidden="true">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="block w-full h-[60px] md:h-[120px]"
+          className="w-full h-full"
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
