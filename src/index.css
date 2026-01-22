@@ -17,15 +17,15 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 30% 18%;
 
-    /* Brand colors - Highlight Purple #9F168D */
-    --primary: 308 76% 35%;
+    /* Brand colors - Highlight Pink #A81783 */
+    --primary: 315 76% 37%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 308 76% 35%;
+    --secondary: 315 76% 37%;
     --secondary-foreground: 0 0% 100%;
     
     /* Highlight color */
-    --cyan-light: 308 76% 35%;
+    --cyan-light: 315 76% 37%;
     --cyan-light-foreground: 0 0% 100%;
 
     /* Dark blue for backgrounds - #1E2842 */
@@ -35,7 +35,7 @@ All colors MUST be HSL.
     --muted-foreground: 220 15% 45%;
 
     /* CTA / Accent */
-    --accent: 308 76% 35%;
+    --accent: 315 76% 37%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -43,7 +43,7 @@ All colors MUST be HSL.
 
     --border: 220 20% 90%;
     --input: 220 20% 90%;
-    --ring: 308 76% 35%;
+    --ring: 315 76% 37%;
 
     --radius: 0.75rem;
     
@@ -161,7 +161,7 @@ All colors MUST be HSL.
     }
     50% {
       transform: scale(1.05);
-      box-shadow: 0 15px 30px hsl(308 76% 35% / 0.5);
+      box-shadow: 0 15px 30px hsl(315 76% 37% / 0.5);
     }
     100% {
       transform: scale(1);
