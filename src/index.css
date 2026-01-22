@@ -17,15 +17,15 @@ All colors MUST be HSL.
     --popover: 0 0% 100%;
     --popover-foreground: 220 30% 18%;
 
-    /* Brand colors - Coral #F45A34 */
-    --primary: 12 90% 58%;
+    /* Brand colors - Highlight Purple #9F168D */
+    --primary: 308 76% 35%;
     --primary-foreground: 0 0% 100%;
     
-    --secondary: 12 90% 58%;
+    --secondary: 308 76% 35%;
     --secondary-foreground: 0 0% 100%;
     
-    /* Coral for highlights */
-    --cyan-light: 12 90% 58%;
+    /* Highlight color */
+    --cyan-light: 308 76% 35%;
     --cyan-light-foreground: 0 0% 100%;
 
     /* Dark blue for backgrounds - #1E2842 */
@@ -34,8 +34,8 @@ All colors MUST be HSL.
     --muted: 220 20% 96%;
     --muted-foreground: 220 15% 45%;
 
-    /* CTA - Coral #F45A34 */
-    --accent: 12 90% 58%;
+    /* CTA / Accent */
+    --accent: 308 76% 35%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84% 60%;
@@ -43,7 +43,7 @@ All colors MUST be HSL.
 
     --border: 220 20% 90%;
     --input: 220 20% 90%;
-    --ring: 12 90% 58%;
+    --ring: 308 76% 35%;
 
     --radius: 0.75rem;
     
@@ -161,7 +161,7 @@ All colors MUST be HSL.
     }
     50% {
       transform: scale(1.05);
-      box-shadow: 0 15px 30px hsl(12 90% 58% / 0.5);
+      box-shadow: 0 15px 30px hsl(308 76% 35% / 0.5);
     }
     100% {
       transform: scale(1);
