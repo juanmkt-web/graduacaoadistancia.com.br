@@ -37,14 +37,8 @@ const professors: Professor[] = [
 const FacultySection = () => {
   return (
     <section
-      className="relative overflow-hidden pt-8 pb-10 md:pt-24 md:pb-32"
-      style={{
-        background: "linear-gradient(to top, hsl(230 75% 10%) 0%, hsl(215 70% 40%) 25%, hsl(230 80% 50%) 70%, hsl(213 97% 55%) 100%)",
-      }}
+      className="relative overflow-hidden pt-8 pb-10 md:pt-24 md:pb-32 bg-[#1E2842]"
     >
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/10" aria-hidden="true" />
-
       {/* Top Wave */}
       <div className="absolute left-0 right-0 top-0 h-10 md:h-16 lg:h-20 rotate-180" aria-hidden="true">
         <svg
@@ -100,7 +94,7 @@ const FacultySection = () => {
                   href={professor.lattesUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-xs md:text-sm font-medium text-accent underline underline-offset-2 transition-colors hover:text-accent/80"
+                  className="inline-flex items-center gap-1 text-xs md:text-sm font-medium text-blue-400 underline underline-offset-2 transition-colors hover:text-blue-300"
                   onClick={(e) => e.stopPropagation()}
                 >
                   <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
