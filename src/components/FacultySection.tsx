@@ -37,19 +37,21 @@ const professors: Professor[] = [
 const FacultySection = () => {
   return (
     <section
-      className="relative overflow-hidden py-16 md:py-24"
+      className="relative overflow-hidden pt-8 pb-10 md:pt-24 md:pb-32"
       style={{
-        backgroundImage:
-          "radial-gradient(ellipse at 12% 88%, rgba(12, 96, 124, .65) 0, rgba(12, 96, 124, .25) 32%, rgba(4, 16, 41, 0) 60%), radial-gradient(ellipse at 94% 20%, rgba(103, 41, 166, .65) 0, rgba(103, 41, 166, .25) 32%, rgba(4, 16, 41, 0) 56%), linear-gradient(180deg, #050d21 0, #040b1a 55%, #020711 100%)",
+        background: "linear-gradient(to top, hsl(230 75% 10%) 0%, hsl(215 70% 40%) 25%, hsl(230 80% 50%) 70%, hsl(213 97% 55%) 100%)",
       }}
     >
+      {/* Overlay */}
+      <div className="absolute inset-0 bg-black/10" aria-hidden="true" />
+
       {/* Top Wave */}
-      <div className="absolute left-0 right-0 top-0 -translate-y-[1px]" aria-hidden="true">
+      <div className="absolute left-0 right-0 top-0 h-10 md:h-16 lg:h-20 rotate-180" aria-hidden="true">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="block w-full h-[60px] md:h-[120px]"
+          className="w-full h-full rotate-180"
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
@@ -63,7 +65,7 @@ const FacultySection = () => {
         <div className="mx-auto max-w-5xl text-center">
           {/* Header */}
           <div className="mb-10 md:mb-14">
-            <h2 className="mb-4 text-3xl font-extrabold uppercase tracking-tight text-white md:text-4xl lg:text-5xl">
+            <h2 className="mb-2 md:mb-6 text-2xl md:text-4xl lg:text-5xl font-bold text-white">
               CORPO DOCENTE DE EXCELÊNCIA
             </h2>
             <p className="mx-auto max-w-3xl text-sm text-white/80 md:text-base lg:text-lg">
@@ -74,16 +76,17 @@ const FacultySection = () => {
           </div>
 
           {/* Professors Grid */}
-          <div className="grid grid-cols-2 gap-6 sm:grid-cols-3 md:gap-8 lg:grid-cols-5">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:gap-6 lg:grid-cols-5">
             {professors.map((professor) => (
-              <div key={professor.name} className="flex flex-col items-center">
+              <div key={professor.name} className="professor-card flex flex-col items-center text-center cursor-pointer group">
                 {/* Photo Container */}
-                <div className="relative mb-4 aspect-[3/4] w-full max-w-[160px] overflow-hidden rounded-xl bg-white shadow-xl">
-                  <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white/20" />
+                <div className="relative mb-3 md:mb-4 overflow-hidden rounded-lg">
+                  {/* Hover Overlay */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[rgba(25,133,252,0.3)] to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10" />
                   <img
                     src={professor.image}
                     alt={professor.name}
-                    className="h-full w-full object-cover object-top"
+                    className="w-full h-40 md:h-56 lg:h-64 object-cover object-top rounded-lg transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
 
@@ -97,9 +100,10 @@ const FacultySection = () => {
                   href={professor.lattesUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1 text-xs text-cyan-light transition-colors hover:text-cyan-light/80 md:text-sm"
+                  className="inline-flex items-center gap-1 text-xs md:text-sm font-medium text-accent underline underline-offset-2 transition-colors hover:text-accent/80"
+                  onClick={(e) => e.stopPropagation()}
                 >
-                  <ExternalLink className="h-3 w-3" />
+                  <ExternalLink className="w-3 h-3 md:w-4 md:h-4" />
                   Currículo Lattes
                 </a>
               </div>
@@ -109,16 +113,16 @@ const FacultySection = () => {
       </div>
 
       {/* Bottom Wave */}
-      <div className="absolute bottom-0 left-0 right-0 translate-y-[1px]" aria-hidden="true">
+      <div className="absolute bottom-0 left-0 right-0 h-10 md:h-16 lg:h-20" aria-hidden="true">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
-          className="block w-full h-[60px] md:h-[120px]"
+          className="w-full h-full"
         >
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            fill="white"
+            fill="#1E2842"
           />
         </svg>
       </div>
