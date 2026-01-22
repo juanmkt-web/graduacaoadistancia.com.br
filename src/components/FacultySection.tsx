@@ -37,7 +37,10 @@ const professors: Professor[] = [
 const FacultySection = () => {
   return (
     <section
-      className="relative overflow-hidden pt-8 pb-10 md:pt-24 md:pb-32 bg-[#1E2842]"
+      className="relative overflow-hidden pt-8 pb-10 md:pt-24 md:pb-32"
+      style={{
+        background: "linear-gradient(135deg, hsl(270 70% 18%) 0%, hsl(305 75% 35%) 25%, hsl(340 80% 45%) 70%, hsl(12 85% 55%) 100%)",
+      }}
     >
       {/* Top Wave */}
       <div className="absolute left-0 right-0 top-0 h-10 md:h-16 lg:h-20 rotate-180" aria-hidden="true">
