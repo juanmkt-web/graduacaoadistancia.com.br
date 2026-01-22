@@ -478,7 +478,7 @@ const Footer = () => {
                 <li className="lirodape">
                   <a
                     className="atxtrodape"
-                    href="https://www.fasuleducacional.edu.br/docs/regulamento-certificacao-intermediaria.pdf"
+                    href="https://www.fasuleducacional.edu.br/docs/Regulamento-das-Atividades-Complementares-v3.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     title="Regulamento Certificação Intermediária"
