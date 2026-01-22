@@ -62,9 +62,10 @@ const FacultySection = () => {
         <div className="relative rounded-2xl md:rounded-3xl overflow-hidden shadow-2xl"
           style={{
             backgroundImage: `
-              radial-gradient(ellipse at 12% 88%, rgba(12, 96, 124, .65) 0, rgba(12, 96, 124, .25) 32%, rgba(4, 16, 41, 0) 60%),
-              radial-gradient(ellipse at 94% 20%, rgba(103, 41, 166, .65) 0, rgba(103, 41, 166, .25) 32%, rgba(4, 16, 41, 0) 56%),
-              linear-gradient(180deg, #050d21 0, #040b1a 55%, #020711 100%)
+              radial-gradient(ellipse at 0% 0%, rgba(75, 35, 120, 0.9) 0%, rgba(75, 35, 120, 0.4) 35%, transparent 60%),
+              radial-gradient(ellipse at 100% 100%, rgba(230, 80, 100, 0.8) 0%, rgba(200, 60, 120, 0.4) 35%, transparent 60%),
+              radial-gradient(ellipse at 50% 50%, rgba(168, 23, 131, 0.7) 0%, rgba(140, 30, 110, 0.3) 40%, transparent 70%),
+              linear-gradient(135deg, hsl(270, 70%, 18%) 0%, hsl(305, 75%, 35%) 35%, hsl(340, 80%, 45%) 65%, hsl(12, 85%, 55%) 100%)
             `
           }}
         >
