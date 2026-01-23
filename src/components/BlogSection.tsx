@@ -66,21 +66,21 @@ const blogPosts: BlogPost[] = [
 
 const BlogSection = () => {
   return (
-    <section className="relative pt-3 pb-16 md:pt-5 md:pb-32 bg-[#1E2842]">
+    <section className="relative pt-2 pb-12 md:pt-5 md:pb-32 bg-[#1E2842]">
       <div className="container mx-auto px-4">
         {/* Header */}
-        <div className="text-center mb-8 md:mb-12">
-          <h2 className="text-2xl md:text-5xl font-bold text-white mb-2 md:mb-4">
+        <div className="text-center mb-4 md:mb-12">
+          <h2 className="text-2xl md:text-5xl font-bold text-white mb-1 md:mb-4">
             BLOG DE INFORMAÇÕES
           </h2>
-          <p className="text-gray-300 text-sm md:text-lg max-w-3xl mx-auto">
+          <p className="text-gray-300 text-xs md:text-lg max-w-3xl mx-auto">
             Dicas de carreira, tendências de mercado e tudo o que você precisa saber para
             tomar as melhores decisões para o seu futuro profissional.
           </p>
         </div>
 
         {/* Blog Grid */}
-        <div className="grid grid-cols-2 gap-3 md:gap-6 lg:grid-cols-4">
+        <div className="grid grid-cols-2 gap-2 md:gap-6 lg:grid-cols-4">
           {blogPosts.map((post, index) => (
             <a
               key={index}

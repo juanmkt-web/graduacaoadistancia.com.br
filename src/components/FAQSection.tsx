@@ -30,31 +30,31 @@ const faqItems = [
 
 const FAQSection = () => {
   return (
-    <section className="relative py-16 md:py-24 bg-white overflow-hidden">
+    <section className="relative py-8 md:py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-8 md:mb-12">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-2 md:mb-4">
+          <div className="text-center mb-4 md:mb-12">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-1 md:mb-4">
               PERGUNTAS FREQUENTES
             </h2>
-            <p className="text-gray-600 text-sm md:text-lg text-center">
+            <p className="text-gray-600 text-xs md:text-lg text-center">
               Tire suas dúvidas sobre a Graduação da FASUL
             </p>
           </div>
 
           {/* Accordion */}
-          <Accordion type="single" collapsible className="flex flex-col gap-2 md:gap-4">
+          <Accordion type="single" collapsible className="flex flex-col gap-1.5 md:gap-4">
             {faqItems.map((item, index) => (
               <AccordionItem
                 key={index}
                 value={`item-${index}`}
-                className="border border-gray-200 rounded-lg px-6 data-[state=open]:border-primary transition-colors"
+                className="border border-gray-200 rounded-lg px-4 md:px-6 data-[state=open]:border-primary transition-colors"
               >
-                <AccordionTrigger className="text-left text-[#1E2842] font-semibold text-sm md:text-base py-5 hover:text-primary transition-colors">
+                <AccordionTrigger className="text-left text-[#1E2842] font-semibold text-xs md:text-base py-3 md:py-5 hover:text-primary transition-colors">
                   {item.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-gray-600 text-base pb-5 leading-relaxed">
+                <AccordionContent className="text-gray-600 text-sm md:text-base pb-3 md:pb-5 leading-relaxed">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>
