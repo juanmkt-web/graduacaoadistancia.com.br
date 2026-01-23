@@ -349,7 +349,7 @@ const Courses = () => {
   const hasMore = visibleCount < courses.length;
 
   return (
-    <section id="cursos" className="pb-24 gradient-animated relative">
+    <section id="cursos" className="pb-12 md:pb-24 gradient-animated relative">
       <div className="absolute top-0 left-0 right-0 h-10 md:h-16 lg:h-20">
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -364,10 +364,10 @@ const Courses = () => {
         </svg>
       </div>
 
-      <div className="container mx-auto px-4 relative z-10 pt-16">
-        <div className="text-center mb-16 text-white animate-fade-in">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">ESCOLHA SUA GRADUAÇÃO</h2>
-          <p className="text-lg text-white/90 max-w-4xl mx-auto leading-relaxed">
+      <div className="container mx-auto px-4 relative z-10 pt-8 md:pt-16">
+        <div className="text-center mb-6 md:mb-16 text-white animate-fade-in">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-6">ESCOLHA SUA GRADUAÇÃO</h2>
+          <p className="text-sm md:text-lg text-white/90 max-w-4xl mx-auto leading-relaxed">
             Dê o próximo passo na sua jornada acadêmica com quem é referência em Ensino. Conheça nossas opções de Cursos
             EAD e Semipresenciais feitos para se encaixar na sua rotina.
           </p>
@@ -382,11 +382,11 @@ const Courses = () => {
 
         {/* Load More Button */}
         {hasMore && (
-          <div className="text-center mt-10 animate-fade-in">
+          <div className="text-center mt-6 md:mt-10 animate-fade-in">
             <Button
               onClick={loadMore}
               variant="outline"
-              className="bg-white/10 border-2 border-white text-white hover:bg-white hover:text-primary font-bold px-10 py-6 text-lg rounded-full transition-all duration-300"
+              className="bg-white/10 border-2 border-white text-white hover:bg-white hover:text-primary font-bold px-6 md:px-10 py-4 md:py-6 text-sm md:text-lg rounded-full transition-all duration-300"
             >
               VER MAIS CURSOS
             </Button>

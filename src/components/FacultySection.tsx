@@ -61,11 +61,11 @@ const FacultySection = () => {
       <div className="container relative z-10 mx-auto px-4">
         <div className="mx-auto max-w-5xl text-center">
           {/* Header */}
-          <div className="mb-10 md:mb-14">
-            <h2 className="mb-2 md:mb-6 text-2xl md:text-4xl lg:text-5xl font-bold text-white">
+          <div className="mb-4 md:mb-14">
+            <h2 className="mb-1 md:mb-6 text-2xl md:text-4xl lg:text-5xl font-bold text-white">
               CORPO DOCENTE DE EXCELÊNCIA
             </h2>
-            <p className="mx-auto max-w-3xl text-sm text-white/80 md:text-base lg:text-lg">
+            <p className="mx-auto max-w-3xl text-xs text-white/80 md:text-base lg:text-lg">
               Nosso corpo docente é formado por professores mestres e doutores com vasta experiência acadêmica e
               profissional, prontos para orientar sua jornada de aprendizado com metodologias inovadoras e conteúdo
               atualizado.
