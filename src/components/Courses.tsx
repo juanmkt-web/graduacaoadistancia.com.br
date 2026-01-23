@@ -368,7 +368,7 @@ const Courses = () => {
         <div className="text-center mb-6 md:mb-16 text-white animate-fade-in">
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-2 md:mb-6">ESCOLHA SUA GRADUAÇÃO</h2>
           <p className="text-sm md:text-lg text-white/90 max-w-4xl mx-auto leading-relaxed">
-            Dê o próximo passo na sua jornada acadêmica com quem é referência em Ensino. Conheça nossas opções de Cursos
+            Dê o próximo passo na sua jornada Acadêmica com quem é referência em Ensino. Conheça nossas opções de Cursos
             EAD e Semipresenciais feitos para se encaixar na sua rotina.
           </p>
         </div>
