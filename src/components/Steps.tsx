@@ -25,7 +25,7 @@ const Steps = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-5 md:mb-16 animate-fade-in">
           <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-1 md:mb-4">
-            TRANSFORME SUA CARREIRA EM <span className="gradient-text">3 PASSOS SIMPLES.</span>
+            TRANSFORME SUA CARREIRA EM <span className="gradient-text">3 PASSOS SIMPLES</span>
           </h2>
           <p className="text-sm md:text-lg text-muted-foreground max-w-2xl mx-auto">
             O caminho para o sucesso profissional nunca foi tão acessível.
