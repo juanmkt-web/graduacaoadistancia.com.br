@@ -4,12 +4,12 @@ const faqItems = [
   {
     question: "Qual a duração dos Cursos de Graduação?",
     answer:
-      "Nossos Cursos de Graduação têm duração a partir de 4 Semestres, dependendo da modalidade e área escolhida. Os cursos tecnológicos geralmente são mais curtos, enquanto bacharelados e licenciaturas podem ter durações maiores.",
+      "Nossos Cursos de Graduação têm duração a partir de 4 Semestres, dependendo da modalidade e área escolhida. Os Cursos Tecnológicos geralmente são mais curtos, enquanto Bacharelados e Licenciaturas podem ter durações maiores.",
   },
   {
-    question: "O diploma é reconhecido pelo MEC?",
+    question: "O Diploma é reconhecido pelo MEC?",
     answer:
-      "Sim! A FASUL é uma Instituição com nota 5 no MEC, a nota máxima de avaliação. Todos os nossos diplomas são reconhecidos nacionalmente e têm a mesma validade de Cursos presenciais.",
+      "Sim! A FASUL é uma Instituição com nota 5 no MEC, a nota máxima de avaliação. Todos os nossos Diplomas são reconhecidos nacionalmente e têm a mesma validade de Cursos presenciais.",
   },
   {
     question: "Quais são as formas de pagamento disponíveis?",
@@ -17,9 +17,9 @@ const faqItems = [
       "Oferecemos diversas formas de pagamento: boleto bancário, cartão de crédito (com parcelamento, ou a vista), PIX e débito automático.",
   },
   {
-    question: "Posso transferir meu Curso de outra instituição?",
+    question: "Posso transferir meu Curso de outra Instituição?",
     answer:
-      "Sim, aceitamos transferências de outras instituições de ensino superior. As disciplinas Cursadas podem ser aproveitadas mediante análise curricular, reduzindo o tempo de conclusão do Curso.",
+      "Sim, aceitamos transferências de outras Instituições de ensino superior. As disciplinas Cursadas podem ser aproveitadas mediante análise curricular, reduzindo o tempo de conclusão do Curso.",
   },
   {
     question: "Quais são as modalidades disponíveis?",
@@ -38,9 +38,7 @@ const FAQSection = () => {
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-[#1E2842] mb-1 md:mb-4">
               PERGUNTAS FREQUENTES
             </h2>
-            <p className="text-gray-600 text-xs md:text-lg text-center">
-              Tire suas dúvidas sobre a Graduação da FASUL
-            </p>
+            <p className="text-gray-600 text-xs md:text-lg text-center">Tire suas dúvidas sobre a Graduação da FASUL</p>
           </div>
 
           {/* Accordion */}
