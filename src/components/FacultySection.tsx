@@ -39,7 +39,8 @@ const FacultySection = () => {
     <section
       className="relative overflow-hidden pt-8 pb-10 md:pt-24 md:pb-32"
       style={{
-        background: "linear-gradient(135deg, hsl(270 70% 18%) 0%, hsl(305 75% 35%) 25%, hsl(340 80% 45%) 70%, hsl(12 85% 55%) 100%)",
+        background:
+          "linear-gradient(135deg, hsl(270 70% 18%) 0%, hsl(305 75% 35%) 25%, hsl(340 80% 45%) 70%, hsl(12 85% 55%) 100%)",
       }}
     >
       {/* Top Wave */}
@@ -66,7 +67,7 @@ const FacultySection = () => {
               CORPO DOCENTE DE EXCELÊNCIA
             </h2>
             <p className="mx-auto max-w-3xl text-xs text-white/80 md:text-base lg:text-lg">
-              Nosso corpo docente é formado por professores mestres e doutores com vasta experiência acadêmica e
+              Nosso Corpo Docente é formado por Professores Mestres e Doutores com vasta experiência acadêmica e
               profissional, prontos para orientar sua jornada de aprendizado com metodologias inovadoras e conteúdo
               atualizado.
             </p>
@@ -75,7 +76,10 @@ const FacultySection = () => {
           {/* Professors Grid */}
           <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:gap-6 lg:grid-cols-5">
             {professors.map((professor) => (
-              <div key={professor.name} className="professor-card flex flex-col items-center text-center cursor-pointer group">
+              <div
+                key={professor.name}
+                className="professor-card flex flex-col items-center text-center cursor-pointer group"
+              >
                 {/* Photo Container */}
                 <div className="relative mb-3 md:mb-4 overflow-hidden rounded-lg">
                   {/* Hover Overlay */}
